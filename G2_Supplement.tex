@@ -1,0 +1,194 @@
+\RequirePackage{fix-cm}
+\RequirePackage{amsmath}  % for \text in math formulas: 
+\RequirePackage{graphicx}
+
+\documentclass[smallextended]{svjour3} 
+
+\input{G2_Commands}
+
+\makeatletter
+\renewcommand{\theequation}{S\arabic{equation}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+%\renewcommand{\bibnumfmt}[1]{[S#1]}
+%\renewcommand{\citenumfont}[1]{S#1}
+\makeatother
+
+\maintext{G2_Method}
+
+\journalname{Journal of Biomolecular NMR}
+%
+
+\begin{document}
+
+\title{
+  Accurate measurement of dipole\slash dipole transverse 
+  cross-correlated relaxation \gtwo{} in methylenes and primary 
+  amines of uniformly \nclab-labeled proteins
+}
+
+\subtitle{{SUPPLEMENTARY~INFORMATION}}
+\titlerunning{SUPPLEMENTARY: Accurate measurement of \gtwo}      
+
+\author{Dmitry M. Lesovoy 
+        \thanks{corresponding author, e-mail:  lesovoydm@gmail.com} \and
+        Maxim A. Dubinnyi      \and 
+        Svetlana B. Nolde      \and 
+        Eduard V. Bocharov  
+          \thanks{corresponding author, e-mail:  bon@nmr.ru}\and 
+        Alexander S. Arseniev
+}
+
+\institute{
+  Dmitry M. Lesovoy    \and 
+  Maxim A. Dubinnyi    \and 
+  Svetlana B. Nolde    \and 
+  Eduard V. Bocharov   \and 
+  Alexander S. Arseniev
+  \at
+  Shemyakin{-}Ovchinnikov Institute of Bioorganic Chemistry, 
+  Russian Academy of Sciences RAS,  Str. Miklukho{‐}Maklaya 
+  16/10, Moscow, 117997, Russian Federation \\
+\and
+  Maxim A. Dubinnyi    \and 
+  Eduard V. Bocharov   \and 
+  Alexander S. Arseniev \at
+  Moscow Institute of Physics and Technology (State University), 
+  Institutsky per., 9, Dolgoprudny, 141700, Russian Federation  
+}
+
+\date{Received: date / Accepted: date}
+
+\maketitle
+
+\newpage
+The \oneJch-modulated approach illustrated by Fig. \ref{fig:scheme3} 
+      can be similarly applied to modify the {CC(CO)NH} {TOCSY} based 
+      scheme, which has been used earlier as a \oneJch-resolved approach
+      \cite{zheng_measurement_2004}. Fig. S1 illustrates a modification of
+      this pulse sequence affecting only the period preceding \clab{} 
+      {FLOPSY}:
+\begin{figure}
+    \centering
+    \includegraphics{FigS1.pdf}
+    \caption{
+       Fig. S1 The modification of the 3D \oneJch-resolved pulse sequence (Zheng and Yang 2004) into \oneJch-modulated approach. All the adjustments take place only before \clab{}-FLOPSY of the CC(CO)NH TOCSY scheme. Narrow and thick bars represent 90\degree{} and 180\degree{} pulses. Constant-time \clab{} States-TPPI sampling is implemented with the aid of $t_1$ delay and $\varphi_1$; INEPT delays are $\Delta = 2\delta = 1/(4\oneJch)$; transverse relaxation delay $T$ is 28.6 ms; two 3D experiments are carried out with $t_2$ delays (used for \oneJch evolution) 0 and $\delta$; $\zeta = 1.2$ ms delay appears only for g5. The red box represents the same block as in Fig. 1. S1 is a 500 $\mu s$ long \clab{} inversion adiabatic Chirp pulse. S2 is a 220 $\mu s$ long 180\degree{} Q3 pulse (the offset at 36 ppm). S3 is a 265 $\mu s$ long inversion IBurp1 pulse (the offset at 145 ppm). Gradient pulses with squared sine shape and 1 ms length except for g3 (0.6 ms) are used. The g1-g5 gradient strengths are as follows: 27\%, 37\%, 47\%, 25\%, 75\%, 57\% whereas 100\% corresponds to 53.5 G/cm. The default phase is $x$ and the phase cycle is:
+       $\varphi_1 = x, -x$;
+       $\varphi_2 = 2(x), 2(-x)$;
+       $\varphi_\text{REC} = 2(x, -x)$.
+    }
+    \label{fig:scheme4}
+\end{figure}
+In this case, both the \qouter{} and the \qinner{} 
+      components of \clab{} triplet are transferred for detection. 
+      Data processing was performed as described in Scheme
+      \ref{subseq:scheme3}. Notably, equalizing the intensities of the 
+      \qouter{} and \qinner{} components prior to {FLOPSY} (as in the work 
+      of Zheng and Yang \cite{zheng_measurement_2004}) makes a reference
+      experiment unnecessary if $A = 0$ is assumed, although doing 
+      experiments at more than one value of $T$ would improve the accuracy 
+      of data approximation and the obtained values of \gtwoCH.
+
+\begin{table}[]
+    \caption{
+       Statistics of the occurrence of methylene groups in 20 proteinogenic 
+       amino acid residues and a fraction of the {NTII} methylenes with 
+       successfully measured \gtwo{}. The complete set of \gtwo{} values is 
+       available in the {BMRB} (data set 19704). 
+    }
+    \centering
+    \begin{tabular}{ccccc}
+      \hline\noalign{\smallskip}
+      Amino acid & Methylenes & Count in NTII & 
+           Methylenes in NTII & Measured \gtwoCH \\
+      \tabhline
+      Ala   & 0  & 0  & 0  & 0  \\
+      Arg   & 3  & 4  & 12 & 12 \\
+      Asn   & 1  & 6  & 6  & 6  \\
+      Asp   & 1  & 2  & 2  & 2  \\
+      Cys   & 1  & 8  & 8  & 8  \\
+      Gln   & 2  & 3  & 6  & 6  \\
+      Glu   & 2  & 3  & 6  & 6  \\
+      Gly   & 1  & 5  & 5  & 5  \\
+      His   & 1  & 2  & 2  & 2  \\
+      Ile   & 1  & 2  & 2  & 2  \\
+      Leu   & 1  & 2  & 2  & 2  \\
+      Lys   & 4  & 5  & 20 & 19 \\
+      Met   & 2  & 0  & 0  & 0  \\
+      Phe   & 1  & 0  & 0  & 0  \\
+      Pro   & 3  & 4  & 12 & 12 \\
+      Ser   & 1  & 4  & 4  & 4  \\
+      Thr   & 0  & 6  & 0  & 0  \\
+      Trp   & 1  & 2  & 2  & 2  \\
+      Tyr   & 1  & 1  & 1  & 1  \\
+      Val   & 0  & 2  & 0  & 0  \\
+    \tabhline
+      TOTAL & 27 & 61 & 90 & 89 \\
+    \noalign{\smallskip}\hline
+    \end{tabular}
+    \label{tab:gtwostats}
+\end{table}
+
+\begin{table}[]
+    \caption{
+      The values of \oneJch{} coupling constants for 24 types of
+      methylene groups (out of 27, except for Met and Phe residues)
+      averaged over all methylene groups of the same type in {NTII}.
+    }
+    \centering
+    \begin{tabular}{ccc}
+      \hline\noalign{\smallskip}
+        Residue & Atom & \oneJch{} \\
+      \tabhline
+        \multirow{3}{*}{Arg} 
+            & CB  & $ 130.1 \pm 0.8 $ \\
+            & CG  & $ 128.0 \pm 1.1 $ \\
+            & CD  & $ 139.9 \pm 0.6 $ \\
+      \tabhline
+        Asn & CB  & $ 131.5 \pm 1.0 $\\
+      \tabhline
+        Asp & CB  & $ 129.2 \pm 0.9 $ \\
+      \tabhline
+        Cys & CB  & $ 143.5 \pm 2.6 $ \\
+      \tabhline
+        \multirow{2}{*}{Gln}  
+            & CB  & $ 131.9 \pm 0.3 $ \\
+            & CG  & $ 129.1 \pm 1.1 $ \\
+      \tabhline
+        \multirow{2}{*}{Glu}
+            & CB  & $ 130.2 \pm 0.5 $ \\
+            & CG  & $ 126.7 \pm 0.5 $ \\
+      \tabhline
+        Gly & CA  & $ 142.0 \pm 0.8 $ \\
+      \tabhline
+        His & CB  & $ 133.3 \pm 0.9 $ \\
+      \tabhline
+        Ile & CG1 & $ 126.3 \pm 0.3 $ \\
+      \tabhline
+        Leu & CB  & $ 129.3 \pm 0.8 $ \\
+      \tabhline
+        \multirow{4}{*}{Lys}
+            & CB  & $ 129.7 \pm 0.6 $ \\
+            & CG  & $ 126.8 \pm 0.5 $ \\
+            & CD  & $ 128.0 \pm 0.3 $ \\
+            & CE  & $ 143.1 \pm 0.5 $ \\
+      \tabhline
+        \multirow{3}{*}{Pro}
+            & CB  & $ 134.9 \pm 0.4 $ \\
+            & CG  & $ 133.9 \pm 0.4 $ \\
+            & CD  & $ 144.1 \pm 0.6 $ \\
+      \tabhline
+        Ser & CB  & $ 147.0 \pm 0.9 $ \\
+      \tabhline
+        Trp & CB  & $ 130.3 \pm 0.4 $ \\
+      \tabhline
+        Tyr & CB  & $ 133.4 \pm 0.3 $ \\
+      \noalign{\smallskip}\hline
+    \end{tabular}
+    \label{tab:oneJch}
+\end{table}
+
+\bibliographystyle{spphys}       % APS-like style for physics
+\bibliography{G2_Method}   % name your BibTeX data base
+
+\end{document}

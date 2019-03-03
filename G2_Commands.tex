@@ -1,0 +1,142 @@
+
+\usepackage{csquotes}
+\usepackage{hyperref} % \url
+\usepackage{gensymb}  % \degree
+\usepackage{multirow}
+\usepackage{xr}       % cross-references to supplementary
+\usepackage{float}
+\usepackage{xfrac}
+\usepackage[dvipsnames]{xcolor}
+%\usepackage{array}
+%\usepackage{hhline}
+%\usepackage{makecell}
+
+%\renewcommand\cellgape{\Gape[6pt]}
+%\renewcommand\theadfont{\itshape}
+
+% special stuff for xr package, copied from here: 
+% https://www.overleaf.com/learn/how-to/Cross_referencing_with_the_xr_package_in_Overleaf
+\makeatletter
+\newcommand*{\addFileDependency}[1]{% argument=file name and extension
+  \typeout{(#1)}
+  \@addtofilelist{#1}
+  \IfFileExists{#1}{}{\typeout{No file #1.}}
+}
+\makeatother
+\newcommand*{\supplementary}[1]{%
+    \externaldocument{#1}%
+    \addFileDependency{#1.tex}%
+    \addFileDependency{#1.aux}%
+}
+\newcommand*{\maintext}[1]{%
+    \externaldocument{#1}%
+    \addFileDependency{#1.tex}%
+    \addFileDependency{#1.aux}%
+}
+% end of stuff for xf/supplementary
+
+\newcommand{\SVETE}{\color{Brown}}
+%\newcommand{\SVETE}{{}}
+
+%\newcommand{\ORANGE}[1]{\colorbox{BurntOrange}{#1}}
+
+\newcommand{\tabhline}{\noalign{\smallskip}\hline\noalign{\smallskip}}
+
+\newcommand*{\gtwoXY}[2]{\ensuremath{\Gamma_\text{2{#2}}^\text{#1}}}
+\newcommand*{\gtwoY}[1]{\ensuremath{\Gamma_\text{2{#1}}}}
+\newcommand{\Hfirst}{\ensuremath{\text{H}}}
+\newcommand{\Hprime}{\ensuremath{\text{H}'}}
+\newcommand{\Hone}{\ensuremath{\text{H}^1}}
+\newcommand{\Htwo}{\ensuremath{\text{H}^2}}
+\newcommand{\gtwo}{\ensuremath{\Gamma_2}}
+\newcommand{\gtwoCSA}{\ensuremath{\Gamma_2^c}}
+\newcommand{\gtwoXH}{\ensuremath{\Gamma_{\text{2XH,XH}'}}}
+\newcommand{\gtwoCH}{\ensuremath{\Gamma_{\text{2CH,CH}'}}}
+\newcommand{\gtwoNH}{\ensuremath{\Gamma_{\text{2NH,NH}'}}}
+\newcommand{\gtwoXHa}{\ensuremath{\Gamma_\text{2XH,XH}}}
+\newcommand{\gtwoCHa}{\ensuremath{\Gamma_\text{2CH,CH}}}
+\newcommand{\gtwoNHa}{\ensuremath{\Gamma_\text{2NH,NH}}}
+\newcommand{\gtwoNNH}{\ensuremath{\Gamma_\text{2N,NH}}}
+\newcommand{\gtwoCCH}{\ensuremath{\Gamma_\text{2C,CH}}}
+\newcommand{\gtwoXXH}{\ensuremath{\Gamma_\text{2X,XH}}}
+\newcommand{\gtwoNNHp}{\ensuremath{\Gamma_{\text{2N,NH}'}}}
+\newcommand{\gtwoCCHp}{\ensuremath{\Gamma_{\text{2C,CH}'}}}
+\newcommand{\gtwoXXHp}{\ensuremath{\Gamma_{\text{2X,XH}'}}}
+
+\newcommand{\StwoCH}{\ensuremath{S^2_\text{CH,CH}}}
+\newcommand{\StwoNH}{\ensuremath{S^2_\text{NH,NH}}}
+\newcommand{\StwoXH}{\ensuremath{S^2_\text{XH,XH}}}
+\newcommand{\StwoCHp}{\ensuremath{S^2_{\text{CH,CH}'}}}
+\newcommand{\StwoNHp}{\ensuremath{S^2_{\text{NH,NH}'}}}
+\newcommand{\StwoXHp}{\ensuremath{S^2_{\text{XH,XH}'}}}
+\newcommand{\StwoCCH}{\ensuremath{S^2_\text{C,CH}}}
+\newcommand{\StwoNNH}{\ensuremath{S^2_\text{C,NH}}}
+\newcommand{\StwoXXH}{\ensuremath{S^2_\text{X,XH}}}
+
+\newcommand{\JCH}{\ensuremath{J_{\text{CH,CH}'}}}
+\newcommand{\JNH}{\ensuremath{J_{\text{NH,NH}'}}}
+\newcommand{\JXH}{\ensuremath{J_{\text{XH,XH}'}}}
+\newcommand{\JCCH}{\ensuremath{J_{\text{C,CH}}}}
+\newcommand{\JNNH}{\ensuremath{J_{\text{N,NH}}}}
+\newcommand{\JXXH}{\ensuremath{J_{\text{X,XH}}}}
+\newcommand{\JHH}{\ensuremath{J_\text{HH}}}
+\newcommand{\Jx}{\ensuremath{J_{\text{X}}}}
+\newcommand{\Jxh}{\ensuremath{J_{\text{XH}}}}
+
+\newcommand{\nclab}{\ensuremath{{}^{13}\text{C}/{}^{15}\text{N}}}
+\newcommand{\nlab}{\ensuremath{{}^{15}\text{N}}}
+\newcommand{\clab}{\ensuremath{{}^{13}\text{C}}}
+\newcommand{\cnolab}{\ensuremath{{}^{12}\text{C}}}
+\newcommand{\hlab}{\ensuremath{{}^{1}\text{H}}}
+\newcommand{\dlab}{\ensuremath{{}^{2}\text{H}}}
+
+\newcommand{\XHtwo}{\ensuremath{\text{XH}_2}}
+\newcommand{\NHtwo}{\ensuremath{\text{NH}_2}}
+\newcommand{\CHtwo}{\ensuremath{\text{CH}_2}}
+\newcommand{\labNHtwo}{\ensuremath{{}^{15}\text{NH}_2}}
+\newcommand{\labCHtwo}{\ensuremath{{}^{13}\text{CH}_2}}
+\newcommand{\CHthree}{\ensuremath{\text{CH}_3}}
+
+\newcommand{\sigmaIS}{\ensuremath{\sigma_{\text{IS}}}}
+\newcommand{\qinner}{\enquote{inner}}
+\newcommand{\qouter}{\enquote{outer}}
+
+\newcommand{\oneJch}{\ensuremath{^1\!J_\text{CH}}}
+\newcommand{\oneJnh}{\ensuremath{^1\!J_\text{NH}}}
+\newcommand{\oneJxh}{\ensuremath{^1\!J_\text{XH}}}
+\newcommand{\oneJcc}{\ensuremath{^1\!J_{\text{CC}}}}
+
+\newcommand{\M}{\ensuremath{\hphantom{-}}}
+
+\newcommand{\Iinn}{\ensuremath{I_\textrm{inn}}}
+\newcommand{\Iout}{\ensuremath{I_\textrm{out}}}
+\newcommand{\Ioutone}{\ensuremath{I_\textrm{out1}}}
+\newcommand{\Iouttwo}{\ensuremath{I_\textrm{out2}}}
+
+\newcommand*{\Xaa}[1]{\ensuremath{\textrm{\ensuremath{#1}}^{\alpha\alpha}}}
+\newcommand*{\Xab}[1]{\ensuremath{\textrm{\ensuremath{#1}}^{\alpha\beta}}}
+\newcommand*{\Xba}[1]{\ensuremath{\textrm{\ensuremath{#1}}^{\beta\alpha}}}
+\newcommand*{\Xabba}[1]{\ensuremath{\textrm{\ensuremath{#1}}^{\alpha\beta + \beta\alpha}}}
+\newcommand*{\Xabbam}[1]{\ensuremath{\textrm{\ensuremath{#1}}^{\alpha\beta - \beta\alpha}}}
+\newcommand*{\Xbb}[1]{\ensuremath{\textrm{\ensuremath{#1}}^{\beta\beta}}}
+
+% C±(HαHβ + HβHα) 
+\newcommand{\TermInner}{\ensuremath{ 
+  C_\pm (
+     H_\alpha H'_\beta + 
+     H_\beta H'_\alpha ) }}
+% C±HαHα 
+\newcommand{\TermOuterA}{\ensuremath{
+  C_\pm H_\alpha H'_\alpha
+}}
+% C±HβHβ
+\newcommand{\TermOuterB}{\ensuremath{
+  C_\pm H_\beta H'_\beta
+}}
+%C±(HαHα + C±HβHβ) 
+\newcommand{\TermOuter}{\ensuremath{ 
+  C_\pm (
+     H_\alpha H'_\alpha + 
+     H_\beta H'_\beta ) }}
+  
+
