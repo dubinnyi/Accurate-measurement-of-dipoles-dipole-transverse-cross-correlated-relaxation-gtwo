@@ -72,7 +72,7 @@ The \oneJch-modulated approach illustrated by Fig. \ref{fig:scheme3}
     \centering
     \includegraphics{FigS1}
     \caption{
-       Fig. S1 The modification of the 3D \oneJch-resolved pulse sequence (Zheng and Yang 2004) into \oneJch-modulated approach. All the adjustments take place only before \clab{}-FLOPSY of the CC(CO)NH TOCSY scheme. Narrow and thick bars represent 90\degree{} and 180\degree{} pulses. Constant-time \clab{} States-TPPI sampling is implemented with the aid of $t_1$ delay and $\varphi_1$; INEPT delays are $\Delta = 2\delta = 1/(4\oneJch)$; transverse relaxation delay $T$ is 28.6 ms; two 3D experiments are carried out with $t_2$ delays (used for \oneJch evolution) 0 and $\delta$; $\zeta = 1.2$ ms delay appears only for g5. The red box represents the same block as in Fig. 1. S1 is a 500 $\mu s$ long \clab{} inversion adiabatic Chirp pulse. S2 is a 220 $\mu s$ long 180\degree{} Q3 pulse (the offset at 36 ppm). S3 is a 265 $\mu s$ long inversion IBurp1 pulse (the offset at 145 ppm). Gradient pulses with squared sine shape and 1 ms length except for g3 (0.6 ms) are used. The g1-g5 gradient strengths are as follows: 27\%, 37\%, 47\%, 25\%, 75\%, 57\% whereas 100\% corresponds to 53.5 G/cm. The default phase is $x$ and the phase cycle is:
+       The modification of the 3D \oneJch-resolved pulse sequence (Zheng and Yang 2004) into \oneJch-modulated approach. All the adjustments take place only before \clab{}-FLOPSY of the CC(CO)NH TOCSY scheme. Narrow and thick bars represent 90\degree{} and 180\degree{} pulses. Constant-time \clab{} States-TPPI sampling is implemented with the aid of $t_1$ delay and $\varphi_1$; INEPT delays are $\Delta = 2\delta = 1/(4\oneJch)$; transverse relaxation delay $T$ is 28.6 ms; two 3D experiments are carried out with $t_2$ delays (used for \oneJch evolution) 0 and $\delta$; $\zeta = 1.2$ ms delay appears only for g5. The red box represents the same block as in Fig. 1. S1 is a 500 $\mu s$ long \clab{} inversion adiabatic Chirp pulse. S2 is a 220 $\mu s$ long 180\degree{} Q3 pulse (the offset at 36 ppm). S3 is a 265 $\mu s$ long inversion IBurp1 pulse (the offset at 145 ppm). Gradient pulses with squared sine shape and 1 ms length except for g3 (0.6 ms) are used. The g1-g5 gradient strengths are as follows: 27\%, 37\%, 47\%, 25\%, 75\%, 57\% whereas 100\% corresponds to 53.5 G/cm. The default phase is $x$ and the phase cycle is:
        $\varphi_1 = x, -x$;
        $\varphi_2 = 2(x), 2(-x)$;
        $\varphi_\text{REC} = 2(x, -x)$.
@@ -88,6 +88,89 @@ In this case, both the \qouter{} and the \qinner{}
       experiment unnecessary if $A = 0$ is assumed, although doing 
       experiments at more than one value of $T$ would improve the accuracy 
       of data approximation and the obtained values of \gtwoCH.
+
+\begin{figure}
+    \centering
+    \includegraphics{FigS2}
+    \caption{
+        The simplification of the \oneJch-modulated Scheme \ref{subseq:scheme3} with \hlab--\clab \{NOE\} enhancement of $C_z$ magnetization. Narrow and thick bars represent 90\degree{} and 180\degree{} pulses. Constant-time \clab{} Echo-Antiecho sampling is implemented with the aid of $t_1$ delay and g1; INEPT delays are $\Delta = 2\delta = 1/(4 \oneJch)$; transverse relaxation delay $T = N*28.6$ ms; $t_2$ delay is used for \oneJch{} evolution; $\zeta = 1.2$ ms delay appears only for g1; $\epsilon = 2.5$ ms. \nlab- and \clab-decoupling are applied during acquisition. 
+        S1 is a $500 \mu s$ long \clab{} inversion adiabatic Chirp pulse. 
+        S2 is a $220 \mu s$ long 180\degree{} Q3 pulse (the offset at 36 ppm). S3 is a $265 \mu s$ long inversion IBurp1 pulse (the offset at 145 ppm).
+        S4 is a 90\degree{} sinc-shaped water-selective \hlab{} flip-back pulse with a duration of 3 ms.
+        Gradient pulses with squared sine shape and 1 ms length except for g3 (0.6 ms) are used. The g1-g5 gradient strengths are as follows: 40\%, 57\%, 47\%, 10\%, 50.2\% whereas 100\% corresponds to 53.5 G/cm.
+        The default phase is $x$ and the phase cycle is: 
+        $\varphi_1 = y, -y$; 
+        $\varphi_2 = 2(x), 2(-x)$; 
+        $\varphi_3 = 4(x), 4(-x)$; 
+        $\varphi_4 = 8(x), 8(-x)$; 
+        $\varphi_5 = 16(x), 16(-x)$; 
+        $\varphi_\text{REC} = 8(x, -x, -x, x)$. 
+        For each successive $t_1$ value, $\varphi_1$ and the phase of the receiver are incremented by 180\degree. 
+    }
+    \label{fig:scheme5}
+\end{figure}
+ggg
+
+\begin{table*} % two column table (star *)
+\caption{
+Comparison of the results obtained with the aid of Schemes 1-3. 
+A reference set of 20 methylene groups characterized by a good 
+signal to noise ratio and the absence of signal overlap is used. 
+$\Delta$ denotes corresponding errors. The table includes various 
+types of methylene groups spaced differently from the backbone. 
+Displayed \gtwoCH{} cover the entire typical range of values. 
+The comprehensive data set of methylene groups of {NTII} has been 
+deposited to the BMRB as entry 19704. \gtwoNH{} values for all nine 
+\NHtwo{} groups in {NTII} are available only for Scheme 3
+}
+
+\begin{tabular}{|rl|ll|ll|ll|ll|}
+\hline\noalign{\smallskip}
+  \multicolumn{2}{|c|}{group} & 
+  \multicolumn{2}{c|}{Scheme 1} &
+  \multicolumn{2}{c|}{Scheme 2} & 
+  \multicolumn{4}{c|}{Scheme 3} \\
+\hline\noalign{\smallskip}
+  & &
+   \gtwo & $\Delta\gtwo$ &
+   \gtwo & $\Delta\gtwo$ &
+   \gtwo & $\Delta\gtwo$ &
+   $S_2$ & $\Delta S_2$ \\
+
+\noalign{\smallskip}\hline\noalign{\smallskip}
+19G & CA  & $-5$   & 1 & $-5.4$  & 0.8 & $-5.5$  & 0.3  & $-0.20$  & 0.01 \\
+41G & CA  & $-6.5$ & 1 & $-6.8$  & 0.7 & $-6.6$  & 0.3  & $-0.24$  & 0.01 \\
+11P & CB  & $-4$   & 1 & $-4.3$  & 0.7 & $-4.1$  & 0.3  & $-0.15$  & 0.01 \\
+12P & CG  & $+5$   & 1 & $+4.9$  & 0.5 & $+4.6$  & 0.3  & $+0.17$  & 0.01 \\
+43P & CG  & $-1$   & 1 & $-1.0$  & 0.6 & $-1.1$  & 0.3  & $-0.04$  & 0.01 \\
+43P & CD  & $-5.5$ & 1 & $-5.7$  & 0.7 & $-6.2$  & 0.3  & $-0.23$  & 0.01 \\
+23C & CB  & $-7$   & 1 & $-6.8$  & 0.7 & $-7.4$  & 0.3  & $-0.27$  & 0.01 \\
+54C & CB  & $-6.5$ & 2 & $-7.6$  & 0.6 & $-7.7$  & 0.3  & $-0.28$  & 0.01 \\
+ 4H & CB  & $-12$  & 2 & $-10.1$ & 0.9 & $-10.4$  & 0.6  & $-0.38$  & 0.02 \\
+27W & CB  & $-10$  & 2 & $-9.7$  & 0.9 & $-10.3$  & 0.4  & $-0.38$  & 0.01 \\
+35I & CG1 & $-0.5$ & 1 & $-0.7$  & 0.6 & $-0.9$  & 0.3  & $-0.03$  & 0.01 \\
+51L & CB  & $-5$   & 1 & $-5.1$  & 0.6 & $-5.3$  & 0.4  & $-0.20$  & 0.01 \\
+29S & CB  & $-1$   & 1 & $-0.7$  & 0.8 & $-1.3$  & 0.4  & $-0.05$  & 0.01 \\
+15K & CB  & $+1$   & 1 & $-0.2$  & 0.8 & $+0.3$  & 0.3  & $+0.01$  & 0.01 \\
+15K & CE  & $+1$   & 1 & $+1.2$  & 0.3 & $+0.6$  & 0.7  & $+0.02$  & 0.02 \\
+26K & CE  & $+2$   & 1 & $+2.3$  & 0.3 & $+1.7$  & 0.4  & $+0.06$  & 0.01 \\
+55R & CG  & $-1$   & 1 & $-0.2$  & 0.5 & $-0.9$  & 0.3  & $-0.03$  & 0.01 \\
+10Q & CG  & \M$0$   & 1 & \M$0.0$  & 0.7 & $-0.2$  & 0.4  & $-0.01$  & 0.01 \\
+ 2E & CG  & \M$0$  & 1 & $-0.4$  & 0.5 & $-0.4$  & 0.3  & $-0.02$  & 0.01 \\
+22N & CB  & $-5$   & 1 & $-5.1$  & 0.6 & $-4.9$  & 0.3  & $-0.18$  & 0.01 \\
+ 5N & ND2 & ---    &---&---      & --- & $-0.1$  & 0.1 & $-0.01$  & 0.02 \\
+ 6Q & NE2 & ---    &---&---      & --- & $-0.4$  & 0.1 & $-0.06$  & 0.02 \\
+ 7Q & NE2 & ---    &---&---      & --- & $-0.5$  & 0.1 & $-0.07$  & 0.01 \\
+10Q & NE2 & ---    &---&---      & --- & $-0.2$  & 0.1 & $-0.03$  & 0.01 \\
+22N & ND2 & ---    &---&---      & --- & $-0.7$  & 0.2 & $-0.09$  & 0.03 \\
+50N & ND2 & ---    &---&---      & --- & $-0.6$  & 0.1 & $-0.08$  & 0.01 \\
+52N & ND2 & ---    &---&---      & --- & $-0.6$  & 0.1 & $-0.08$  & 0.01 \\
+60N & ND2 & ---    &---&---      & --- & $-1.4$  & 0.3 & $-0.19$  & 0.05 \\
+61N & ND2 & ---    &---&---      & --- & $-0.9$  & 0.1 & $-0.11$  & 0.02 \\
+\noalign{\smallskip}\hline
+\end{tabular}
+\label{tab:gtwo} 
+\end{table*}
 
 \begin{table}[]
     \caption{
@@ -131,9 +214,9 @@ In this case, both the \qouter{} and the \qinner{}
 
 \begin{table}[]
     \caption{
-      The values of \oneJch{} coupling constants for 24 types of
-      methylene groups (out of 27, except for Met and Phe residues)
-      averaged over all methylene groups of the same type in {NTII}.
+      The values of \oneJch{} coupling constants for 26 types of
+      methylene groups (out of 27, except for Phe residue)
+      averaged over all methylene groups of the same type in {NTII} and \cite{lesovoy_nmr_2017}.
     }
     \centering
     \begin{tabular}{ccc}
@@ -172,6 +255,10 @@ In this case, both the \qouter{} and the \qinner{}
             & CG  & $ 126.8 \pm 0.5 $ \\
             & CD  & $ 128.0 \pm 0.3 $ \\
             & CE  & $ 143.1 \pm 0.5 $ \\
+      \tabhline
+        \multirow{2}{*}{Met}
+            & CB  & $ 130.8 \pm 0.5 $ \\
+            & CG  & $ 138.7 \pm 0.5 $ \\
       \tabhline
         \multirow{3}{*}{Pro}
             & CB  & $ 134.9 \pm 0.4 $ \\

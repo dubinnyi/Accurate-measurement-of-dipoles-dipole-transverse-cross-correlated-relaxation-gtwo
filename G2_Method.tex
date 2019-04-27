@@ -87,8 +87,8 @@
 \begin{abstract}
 Side chains possess a broader conformational space (compared to the 
 backbone) and are directly affected by intra- and intermolecular 
-interactions, hence its dynamics and the corresponding NMR relaxation 
-data are more sensitive and informative. Nevertheless, the transverse 
+interactions, hence their dynamics and the corresponding NMR relaxation 
+data are more sensitive and informative. Nevertheless, transverse 
 relaxation in \XHtwo{} ($\text{X}=\clab$ or \nlab) spin systems is 
 predominantly non-measurable in uniformly \nclab-labeled 
 proteins due to cross-correlation effects. In the present publication, we 
@@ -109,7 +109,7 @@ and constant-time evolution;
 3) low sensitivity has been enhanced via proton acquisition which 
 required special attention to a zero-quantum coherence evolution. 
 The proposed 
-method expands the set of «dynamics sensors» covering protein side chains 
+method expands the set of \enquote{dynamics sensors} covering protein side chains 
 and substantially improves the quality and the level of detail of 
 experimental data describing dynamic processes in proteins and protein 
 complexes. 
@@ -126,11 +126,11 @@ dipole/dipole transverse cross-correlated relaxation
 \label{intro}
 
 Measurement of relaxation parameters of nuclear spins and superposition
-of various multispin density operators provides unique information about motility
+of various multispin density operators provides unique information about mobility
 of different groups of protein atoms. However, due to the complexity of
 NMR relaxation mechanisms, many of the parameters of the relaxation 
 matrix cannot be practically measured; therefore only some of them 
-found broad application in the routine protein studies. For example, 
+found broad application in routine protein studies. For example, 
 relaxation parameters of backbone NH groups: \nlab{} longitudinal 
 ($R_1$) and transverse ($R_2$) relaxation rates, heteronuclear 
 $\nlab-\{\hlab\}$ NOE (\sigmaIS), and dipole\slash CSA transverse 
@@ -151,8 +151,8 @@ since the protein side chains have a broader conformational space and are
 directly susceptible to the effects of protein interactions 
 \cite{igumenova_characterization_2006,paquin_multiple-timescale_2008,trbovic_protein_2009,yang_probing_2011,weininger_13c_2012,ferrage_chapter_2017}. 
 Thus, it is the side chain mobility 
-monitoring that provides a better understanding of mating between the 
-protein surface and the biological partner, which is especially important 
+monitoring that provides a better understanding of binding the 
+protein surface with a partner, which is especially important 
 for understanding the function of protein hot-spots at the atomic level 
 \cite{zerbe_relationship_2012,cukuroglu_hot_2014,watkins_side-chain_2016}. 
 Nevertheless, measurements of side chain NMR-relaxation parameters are used 
@@ -180,7 +180,7 @@ cross-correlation effects, though considered as negligible in some pioneering wo
 has been recognised that these effects may result in problematic 
 measurements and analysis and cannot be eliminated by an 
 appropriate design of the pulse sequence
-\cite{kumar_cross-correlations_2000,yang_probing_2011}.
+\cite{yang_probing_2011,kumar_cross-correlations_2000}.
 
 In uniformly labelled proteins, an alternative to $R_2$ is the transverse 
 cross-correlated relaxation rate \gtwoXH, which, similarly to $R_2$, 
@@ -198,7 +198,7 @@ is based on the analysis of \qinner\slash \qouter{} intensity ratio in
 \clab{} quadruplets \cite{zhang_probing_2006} and allows, for example, 
 mapping the interfaces of helix-helix interactions in membrane proteins 
 \cite{lesovoy_nmr_2017}. In order to comprehensively describe how the 
-protein surface dynamically adapts to interaction with a biological 
+protein surface dynamically adapts to interaction with a binding 
 partner, monitoring of \CHtwo{} and \NHtwo{} groups is also needed. 
 Unfortunately, for \CHtwo{} and \NHtwo{} groups the analysis of 
 intensities in the conventional constant-time {HSQC}-type \hlab-detected 
@@ -242,7 +242,7 @@ in our laboratory
 was chosen 
 as a model system for pulse sequence development and appraisal. We provide an example of the simple analysis of relaxation parameters \gtwoCH{} obtained for methylenes of NTII.
 
-\section{Threory: transverse relaxation in \XHtwo{} groups}
+\section{Theory: transverse relaxation in \XHtwo{} groups}
 \label{sec:theory}
 
 
@@ -327,20 +327,18 @@ of individual lines by combination of
 \end{align}
 Equation \eqref{eq:gtwofromint} is the method of consensus for the measurement of 
 \gtwo{}
-\cite{yang_study_1998,banci_side_2001,zheng_measurement_2004}. 
+\cite{banci_side_2001,zheng_measurement_2004,yang_study_1998}. 
 
 The dipole\slash dipole \gtwo{} \eqref{eq:g2} and the 
 CSA\slash dipole \gtwoCSA{} \eqref{eq:g2c} transverse 
 cross-correlated relaxation rates are governed by the dynamics of an 
 \XHtwo{} group as follows 
-\cite{yang_study_1998,kumar_cross-correlations_2000,banci_side_2001,zheng_measurement_2004,yang_probing_2011}:
+\cite{yang_probing_2011,kumar_cross-correlations_2000,banci_side_2001,zheng_measurement_2004,yang_study_1998}:
 \begin{align}
   \label{eq:gtwoJ}
   \gtwo  & = 
     \tfrac{1}{10} \xi_\text{XH}^2
        \Bigl(4 \Jxh(0) + 3 \Jxh(\omega_\text{X} ) \Bigr )  \\
-%    \tfrac{1}{10} \xi_\text{HH}^2
-%      \Bigl(6 \JHH(\omega_\text{H}) + 6 \JHH(2\omega_\text{H} ) \Bigr )
   \label{eq:gtwoCSAJ}
   \gtwoCSA & = \tfrac{1}{15} \xi_\text{X} \xi_\text{XH}
     \Bigl(4 \Jx(0) + 3 \Jx(\omega_\text{X} ) \Bigr )
@@ -362,7 +360,7 @@ overall rotation are:
   \label{eq:Jxh}
     \Jxh(\omega)  = & \StwoXHp\frac{ \tau_c}{1 + (\omega \tau_c)^2} 
      + \nonumber \\
-     + & \bigl[ P_2(\cos\theta_\text{XH})-\StwoXHp\bigr]
+     + & \bigl[ P_2(\cos\theta_\text{{HXH}'})-\StwoXHp\bigr]
      \frac{\tau_e}{1+(\omega\tau_e)^2}\\
   \label{eq:Jx}
     \Jx(\omega)  = & \StwoXXH \frac{\tau_c}{1 + (\omega \tau_c)^2} 
@@ -446,13 +444,13 @@ linear Chirp of $500 \mu s$ duration, 60 kHz total sweep width, with
 offset at 36 ppm, defined by 1000 points, 20\% smoothing, sweep from 
 high to low field (Crp60,0.5,20.1 in the Bruker wave form library)
 \cite{kupce_optimized_1996,fu_broadband_1995}
-calibrated with Q factor of 5. The inversion pulse for \hlab{} zero-quantum dephasing \cite{thrippleton_elimination_2003,harris_zero-quantum_2011} was a smoothed linear Chirp of 20 ms duration, 60 kHz total sweep width, with 
-offset at 4.7 ppm, defined by 10000 points, 20\% smoothing, sweep from 
-high to low field (Crp60,20,20.10 in the Bruker wave form library) calibrated with Q factor of 5. Water \hlab{} flip-back 90\degree{} pulses were a sinc-shaped \cite{cavanagh_protein_2007} (1000 points defining the shape) of 3 ms duration with offset at 4.7 ppm. Selective inversion of CO and aromatic carbons was done by the classical inversion shape pulse IBurp1 (1000 points defining the shape) of 265 $\mu s$ duration with offset at 145 ppm
+calibrated with Q factor of 5. The inversion pulse for \hlab{} zero-quantum dephasing \cite{thrippleton_elimination_2003,harris_zero-quantum_2011} was a smoothed linear Chirp of 40 ms duration, 60 kHz total sweep width, with 
+offset at 4.7 ppm, defined by 20000 points, 20\% smoothing, sweep from 
+high to low field (Crp60,40,20.20 in the Bruker wave form library) calibrated with Q factor of 5. Water \hlab{} flip-back 90\degree{} pulses were a sinc-shaped \cite{cavanagh_protein_2007} (1000 points defining the shape) of 3 ms duration with offset at 4.7 ppm. Selective inversion of CO and aromatic carbons was done by the classical inversion shape pulse IBurp1 (1000 points defining the shape) of 265 $\mu s$ duration with offset at 145 ppm
 \cite{geen_band-selective_1991,vincent_chapter_1997}.
  A carbon 180\degree{} Quaternion cascade (Q3) shaped pulse of 
  $220 \mu s$ duration (1000 points defining the shape) with offset at 
- 36 ppm  \cite{emsley_optimization_1992,vincent_chapter_1997}
+ 36 ppm  \cite{vincent_chapter_1997,emsley_optimization_1992}
  was applied to invert and refocus the aliphatic region simultaneously
  without \oneJch{}-evolution \cite{lescop_guidelines_2010}
  during the pulse. It should be noted that shaped composite $\pi$ pulses
@@ -471,7 +469,7 @@ $\cos(2\pi \cdot {\oneJch} \cdot t)$, thus providing \oneJch{}
 values. Signal intensity analysis was performed with the aid of 
 Mathematica (Wolfram Research Inc.). The program minimizes a penalty 
 function (the difference between experimental and theoretical values) 
-by the method of Levenberg–Marquardt \cite{press_chapter_1992} and 
+by the method of Levenberg-Marquardt \cite{press_chapter_1992} and 
 yields estimates of the parameters together with their uncertainties. 
 The details of the analysis contributed to \gtwoXH{} relaxation 
 parameter estimates are step by step described in the Results. 
@@ -480,9 +478,7 @@ describe the overall tumbling of the protein for the interpretation
 (finding order parameters of internal motions) of side chain relaxation. 
 Diffusion tensor parameters were determined by the aggregate analysis of 
 all backbone \nlab{} relaxation parameters with the help of the 
-FastModelFree software \cite{cole_fast-modelfree_2003}. 
-
-The dependence 
+FastModelFree software \cite{cole_fast-modelfree_2003}. The dependence 
 of \gtwoCH{} upon the cross-correlation order parameter \StwoCHp{} was estimated 
 by equation \eqref{eq:gtwo:tauc} for $\tau_c = 3$ ns and 
 proton {NMR} frequency 800~MHz: 
@@ -491,17 +487,16 @@ proton {NMR} frequency 800~MHz:
      \StwoCHp  & \approx 0.037 \cdot \gtwoCH \\
      \StwoNHp  & \approx 0.130 \cdot \gtwoNH
 \end{align}
-
+Analysis of NMR pulse sequences with the product operator formalism was also performed in Mathematica (Wolfram Research Inc.) using "POMA" package \cite{guntert_poma:_1993,guntert_symbolic_2006,benesi_primer_2015}.
 
 
 \section{Results}
 \label{results}
-Dipole-dipole transverse cross-correlated relaxation rate \gtwoXH{} 
-(\gtwo{} in compact notation) mo\-dulate the \nclab{}
+Dipole-dipole transverse cross-correlated relaxation rate \gtwoXH{} mo\-dulate the \nclab{}
 triplet intensities of a \CHtwo/\NHtwo{} group from the classic $1:2:1$ 
 ratio towards a \enquote{distorted} one, where the intensity of the central 
 component decrease and the sum of the side components increase during the 
-relaxation delay \cite{zheng_measurement_2004,yang_probing_2011}. The 
+relaxation delay \cite{yang_probing_2011,zheng_measurement_2004}. The 
 easiest and the most obvious method of \gtwo{} measurement is to extract 
 the ratio of the triplet components from a one-dimensional \clab{} 
 experiment, which is practically unachievable due to a considerable overlap 
@@ -523,7 +518,7 @@ cross-cor\-related relaxation rate \gtwo.
  sampling is implemented with the aid of $t_1$ delay and 
  $\varphi_1$; {INEPT} delays are $\Delta = 2\delta = 1/(4\oneJch)$; 
  transverse relaxation delays $T$ are 1.43, 28.6 and 57.2 ms. 
- The red box represents a 22 ms block of \hlab{} inversion adiabatic pulse and gradients\cite{thrippleton_elimination_2003,harris_zero-quantum_2011}, suppressing all \hlab-containing coherences. 
+ The red box represents a 42 ms block of \hlab{} inversion adiabatic pulse and gradients\cite{thrippleton_elimination_2003,harris_zero-quantum_2011}, suppressing all \hlab-containing coherences. 
  \nlab-decoupling is applied during acquisition. 
  S1 is a 500 $\mu s$ long \clab{} inversion adiabatic Chirp pulse. 
  S2 is a 220 $\mu s$ long 180\degree{} Q3 pulse (the offset at 36 ppm). 
@@ -531,7 +526,7 @@ cross-cor\-related relaxation rate \gtwo.
  at 145 ppm) is applied for virtual IPAP decoupling by simultaneous 
  altering the IPAP1 ($T/4$ or 4.5 ms) and IPAP2 ($T/4$ or 0 ms) 
  delays. Gradient pulses with squared sine shape and 1 ms length 
- except for g3 (0.6 ms), g4 (rectangular 20 ms) are used. 
+ except for g3 (0.6 ms), g4 (rectangular 40 ms) are used. 
  The g1-g7 gradient strengths are as follows: 27\%, 37\%, 47\%, 10\%, 35\%, and 57\%, whereas 100\% corresponds to 53.5 G/cm.
  The default phase is $x$ and the phase cycle is: 
  $\varphi_1 = y, -y$; 
@@ -554,7 +549,7 @@ experiment, we design a 2D \hlab-\clab{} correlation experiment
 \begin{align}
   \label{eq:sch1:afterinept}
   \tfrac{1}{2}\bigl(\cos \omega_H t_1+\cos \omega_{H'} t_1\bigr) 
-   \underbrace{(C_y+4 C_y H_z H'_z)}_\text{\qouter elements}
+   \underbrace{(C_y+4 C_y H_z H'_z)}_\text{{\qouter} elements}
 \end{align}
 The density operators of individual lines of 
 \oneJch-resolved 1:2:1 \clab{} tri\-plet 
@@ -592,11 +587,11 @@ and hence could not be transferred to/from \hlab{} by means of INEPT.
 The equations \eqref{eq:sigmainout} outline that elimination of all \hlab-containing
 density operators will adjust the coherence \eqref{eq:sch1:afterinept}
 to the perfect 1:2:1 triplet $C_y$ 
-\cite{yang_study_1998,banci_side_2001,zheng_measurement_2004} 
+\cite{banci_side_2001,zheng_measurement_2004,yang_study_1998} 
 prior to relaxation delay. 
 
 The red block in  Fig.~\ref{fig:scheme1} employing an rf frequency sweep\slash gradient pulse 
-combination (see \cite{thrippleton_elimination_2003,harris_zero-quantum_2011,claridge_experimental_2009} for details) suppresses all \hlab-containing coherences including zero-quantum proton one, $C_z \text{ZQ}$. All zero-\-quan\-tum frequencies may not be known, but typical values for the zero-quantum dephasing duration should be ~20-50 ms \cite{claridge_experimental_2009}.
+combination (see \cite{thrippleton_elimination_2003,harris_zero-quantum_2011,claridge_experimental_2009} for details) suppresses all \hlab-containing coherences including zero-quantum proton one, $C_z \text{ZQ}$. All zero-\-quan\-tum frequencies may not be known, but typical values for the zero-quantum dephasing duration should be 20-50 ms \cite{claridge_experimental_2009}.
 It is noteworthy that the proton zero-quantum 
 coherence relaxation is about 5 times as large as $R_{\text{1Hsel}}$ 
 \cite{zheng_measurement_2004}, providing additional decrease of multispin density operators with proton $ZQ$ coherences.
@@ -618,7 +613,7 @@ $\clab_\text{aromatic}$ and $^{13}\text{CO}$.
 The dependence of the triplet components intensity 
 upon the relaxation delay $T$ is 
 approximated by the equation  \eqref{eq:gtwofromint}
-\cite{carlomagno_errors_2000,zheng_measurement_2004}: 
+\cite{zheng_measurement_2004,carlomagno_errors_2000}: 
 \begin{equation}
 \label{eq:sch1:intensity}
   4 T \cdot \gtwo + A = - ln\biggl(\frac{4 \Ioutone \Iouttwo}{\Iinn^2}\biggr)
@@ -632,67 +627,12 @@ of the pulse scheme application obtained for a representative sample of
 well-resolved \clab{} triplets are present in the first column of Table 
 \ref{tab:gtwo}. 
 
-
-\begin{table*} % two column table (star *)
-\caption{
-Comparison of the results obtained with the aid of Schemes 1-3. 
-A reference set of 20 methylene groups characterized by a good 
-signal to noise ratio and the absence of signal overlap is used. 
-$\Delta$ denotes corresponding errors. The table includes various 
-types of methylene groups spaced differently from the backbone. 
-Displayed \gtwoCH{} cover the entire typical range of values. 
-The comprehensive data set of methylene groups of {NTII} has been 
-deposited to the BMRB as entry 19704. \gtwoNH{} values for all nine 
-\NHtwo{} groups in {NTII} are available only for Scheme 3
-}
-
-\begin{tabular}{|rl|ll|ll|ll|ll|}
-\hline\noalign{\smallskip}
-  \multicolumn{2}{|c|}{group} & 
-  \multicolumn{2}{c|}{Scheme 1} &
-  \multicolumn{2}{c|}{Scheme 2} & 
-  \multicolumn{4}{c|}{Scheme 3} \\
-\hline\noalign{\smallskip}
-  & &
-   \gtwo & $\Delta\gtwo$ &
-   \gtwo & $\Delta\gtwo$ &
-   \gtwo & $\Delta\gtwo$ &
-   $S_2$ & $\Delta S_2$ \\
-
-\noalign{\smallskip}\hline\noalign{\smallskip}
-19G & CA  & $-5$   & 1 & $-5.4$  & 0.8 & $-5.5$  & 0.3  & $-0.20$  & 0.01 \\
-41G & CA  & $-6.5$ & 1 & $-6.8$  & 0.7 & $-6.6$  & 0.3  & $-0.24$  & 0.01 \\
-11P & CB  & $-4$   & 1 & $-4.3$  & 0.7 & $-4.1$  & 0.3  & $-0.15$  & 0.01 \\
-12P & CG  & $+5$   & 1 & $+4.9$  & 0.5 & $+4.6$  & 0.3  & $+0.17$  & 0.01 \\
-43P & CG  & $-1$   & 1 & $-1.0$  & 0.6 & $-1.1$  & 0.3  & $-0.04$  & 0.01 \\
-43P & CD  & $-5.5$ & 1 & $-5.7$  & 0.7 & $-6.2$  & 0.3  & $-0.23$  & 0.01 \\
-23C & CB  & $-7$   & 1 & $-6.8$  & 0.7 & $-7.4$  & 0.3  & $-0.27$  & 0.01 \\
-54C & CB  & $-6.5$ & 2 & $-7.6$  & 0.6 & $-7.7$  & 0.3  & $-0.28$  & 0.01 \\
- 4H & CB  & $-12$  & 2 & $-10.1$ & 0.9 & $-10.4$  & 0.6  & $-0.38$  & 0.02 \\
-27W & CB  & $-10$  & 2 & $-9.7$  & 0.9 & $-10.3$  & 0.4  & $-0.38$  & 0.01 \\
-35I & CG1 & $-0.5$ & 1 & $-0.7$  & 0.6 & $-0.9$  & 0.3  & $-0.03$  & 0.01 \\
-51L & CB  & $-5$   & 1 & $-5.1$  & 0.6 & $-5.3$  & 0.4  & $-0.20$  & 0.01 \\
-29S & CB  & $-1$   & 1 & $-0.7$  & 0.8 & $-1.3$  & 0.4  & $-0.05$  & 0.01 \\
-15K & CB  & $+1$   & 1 & $-0.2$  & 0.8 & $+0.3$  & 0.3  & $+0.01$  & 0.01 \\
-15K & CE  & $+1$   & 1 & $+1.2$  & 0.3 & $+0.6$  & 0.7  & $+0.02$  & 0.02 \\
-26K & CE  & $+2$   & 1 & $+2.3$  & 0.3 & $+1.7$  & 0.4  & $+0.06$  & 0.01 \\
-55R & CG  & $-1$   & 1 & $-0.2$  & 0.5 & $-0.9$  & 0.3  & $-0.03$  & 0.01 \\
-10Q & CG  & \M$0$   & 1 & \M$0.0$  & 0.7 & $-0.2$  & 0.4  & $-0.01$  & 0.01 \\
- 2E & CG  & \M$0$  & 1 & $-0.4$  & 0.5 & $-0.4$  & 0.3  & $-0.02$  & 0.01 \\
-22N & CB  & $-5$   & 1 & $-5.1$  & 0.6 & $-4.9$  & 0.3  & $-0.18$  & 0.01 \\
- 5N & ND2 & ---    &---&---      & --- & $-1.56$ & 0.17 & $-0.21$  & 0.02 \\
- 6Q & NE2 & ---    &---&---      & --- & $-2.20$ & 0.24 & $-0.29$  & 0.03 \\
- 7Q & NE2 & ---    &---&---      & --- & $-1.75$ & 0.14 & $-0.23$  & 0.02 \\
-10Q & NE2 & ---    &---&---      & --- & $-0.56$ & 0.04 & $-0.08$  & 0.01 \\
-22N & ND2 & ---    &---&---      & --- & $-0.96$ & 0.08 & $-0.13$  & 0.01 \\
-50N & ND2 & ---    &---&---      & --- & $-0.38$ & 0.05 & $-0.05$  & 0.01 \\
-52N & ND2 & ---    &---&---      & --- & $-1.93$ & 0.13 & $-0.26$  & 0.02 \\
-60N & ND2 & ---    &---&---      & --- & $-0.01$ & 0.29 & \M$0.00$ & 0.04 \\
-61N & ND2 & ---    &---&---      & --- & $-1.75$ & 0.22 & $-0.23$  & 0.03 \\
-\noalign{\smallskip}\hline
-\end{tabular}
-\label{tab:gtwo} 
-\end{table*}
+\begin{figure}
+    \includegraphics[width=\columnwidth]{Fig5}
+    \caption{
+    Correlation plot of \gtwoCH{} values with corresponding errors (see Table \ref{tab:gtwo}) obtained with the aid of Schemes 1-3. A reference set of 20 methylene groups characterized by a good signal to noise ratio and the absence of signal overlap was used. The set includes various types of methylene groups spaced differently from the backbone and covering the entire typical range of values.}
+    \label{fig:cp}
+\end{figure}
 
 \subsection{Scheme 2: \oneJch-modulated carbon-detected experiment}
 \label{subseq:scheme2}
@@ -779,17 +719,17 @@ upon $T$ can be approximated by the equation
   \label{eq:sch2:intensity}
   T \cdot 2 \gtwo + A = -ln \biggl(\frac{\Iout}{\Iinn} \biggr) 
 \end{equation}
-in line with earlier works \cite{carlomagno_errors_2000,zhang_probing_2006}. 
+in line with earlier works \cite{zhang_probing_2006,carlomagno_errors_2000}. 
 We compared this scheme to the one illustrated by Fig. \ref{fig:scheme1}. 
 The results are 
-summarized in Table \ref{tab:gtwo} and indicative of lower random errors 
+summarized in Fig.~\ref{fig:cp}a and indicative of lower random errors 
 in the latter case, without systematic discrepancies between the methods. 
 
 \subsection{Scheme 3: \oneJch-modulated proton-detected experiment}
 \label{subseq:scheme3}
 
 \begin{figure*}
-  \includegraphics[width=1.0\textwidth]{Fig3_maxZQ}
+  \includegraphics[width=1.0\textwidth]{Fig3}
   \caption{
     a) The pulse sequence of a 2D \hlab-\clab{} proton-detected 
     \oneJch-modulated experiment (Scheme \ref{subseq:scheme3}) 
@@ -816,8 +756,7 @@ in the latter case, without systematic discrepancies between the methods.
     $\varphi_4 = 8(x), 8(-x)$; 
     $\varphi_5 = 16(x), 16(-x)$; 
     $\varphi_\text{REC} = 8(x, -x, -x, x)$. 
-    For each successive $t_1$ value, $\varphi_1$ and the phase of the receiver 
-    are incremented by 180\degree. 
+    For each successive $t_1$ value, $\varphi_1$ and the phase of the receiver are incremented by 180\degree. 
     b, c) A fragments of the 2D \hlab-\clab{} \oneJch-modulated proton-detected spectra obtained at $T = 28.6$, 57.2 ms and $t_2 = 8 \mu s$, 
     respectively.
   }
@@ -856,6 +795,7 @@ $\Omega_{ZQ}=\omega_{H}-\omega_{H'}$ under the chemical shift Hamiltonian
 this evolution is refocused by the 180\degree{} \hlab-pulse at the middle of the 
 \enquote{a}--\enquote{b} time period:
 \begin{align}
+  \label{eq:zqx:refocus}
   \overset{\text{\enquote{a}}}{ZQ_x}  
     \xrightarrow{t} & ZQ_x \cos \Omega_{ZQ}t + ZQ_y \sin \Omega_{ZQ}t
     \xrightarrow{} \nonumber \\
@@ -908,6 +848,12 @@ ZQ evolution allows making accurate and precise measurements of
 \gtwoCH{} with all the advantages of proton detection in the absence 
 of \clab{} triplets. 
 
+The product operator formalism of $ZQ_{x,y}$ evolution described above is not appropriate when the 
+chemical shift difference between methylene protons is of the same order as ${^2\!J_{\text{HH}'}}$ 
+coupling constant \cite{cavanagh_protein_2007,benesi_primer_2015}. Scheme~2 above or the scheme in Fig.~\ref{fig:scheme4} may be more suitable for such cases.
+A solution to this problem (at the expense of signal to noise ratio) could also be the increasing of $ZQ_x \rightarrow{} ZQ_y$
+refocusing delay (\enquote{a} -- \enquote{b} in Fig. \ref{fig:scheme3}) to guarantee
+complete relaxation of proton coherences.
 
 The intensity of a signal in the experiment represented in 
 Fig.~\ref{fig:scheme3} can be approximated by the same expression 
@@ -920,28 +866,38 @@ equation:
 \end{equation}
 As opposed to the experiment shown in Fig.~\ref{fig:scheme2}, 
 the step-wise increase of 
-$T = N/2 \oneJcc = N \cdot 14.3$ ms results in the enhancement of resolution 
+$T = N/(2 \oneJcc) = N \cdot 14.3$ ms results in the enhancement of resolution 
 in the \clab{} dimension in the third experiment (see 
 Fig.~\ref{fig:scheme3}b,c). 
 For \labNHtwo{} groups, the direct \nlab{} analogue of the pulse sequence
 from the Fig.~\ref{fig:scheme3} could similarly provide the $\Iinn/\Iout$ ratio. 
 
-Noteworthy, transfer of the target $C_z$ magnetization to \oneJch-coupled
+Comparison of the Schemes 1-3 described above is summarized in
+Fig.~\ref{fig:cp}b and indicative of the improved accuracy of the third 
+method without systematic deviation from the reference carbon-detected
+approaches.
+
+\subsection{Applying \oneJch-modulation for measurement of \gtwo{}}
+\label{subseq:gtwoblock}
+
+The concept of \oneJch-mo\-du\-la\-ted approach applied in sections
+\ref{subseq:scheme2} and \ref{subseq:scheme3} is useful to develop numerous pulse sequences for measurement of \gtwoCH{}.
+
+The first, sophisticated $\hlab \rightarrow{} \clab$ INEPT magnetization 
+transfer followed by {ZQC} suppression block has been motivated by the gain in sensitivity. We also developed and tested less 
+sensitive schemes which started from 90\degree{} \clab{} pulse only (data not shown) or from \hlab--\clab \{NOE\} signal enhancement by \hlab{} irradiation (illustrated in Fig.~\ref{fig:scheme5}). Both schemes avoids the arising of {ZQC} before \gtwo{} relaxation delay without any observable difference.
+
+The second transfer of the target $C_z$ magnetization to \oneJch-coupled
 protons for detection is not the only viable
-option. The $C_z$ magnetization can be transferred for detection employing 
-3D {(H)CCH} {TOCSY} scheme, 3D {(H)CC(CO)NH} {TOCSY} or CBCA(CO)NH schemes 
-(used earlier as the \oneJch-resolved approach, see
-\cite{zheng_measurement_2004,yang_1h13c_1999}), or
-through {INEPT} to $C_\alpha H_\alpha$ \cite{banci_side_2001}. These
+option. $C_z$ magnetization can be transferred employing 
+3D {(H)CC(CO)NH} {TOCSY} sche\-me as in \cite{zheng_measurement_2004}, \oneJch-modulated version of this experiment is illustrated in Fig. \ref{fig:scheme4}.
+Other ways of $C_z$ magnetization transfer may include  CBCA(CO)NH
+experiment \cite{yang_1h13c_1999,yang_study_1998} or {INEPT}
+to $C_\alpha H_\alpha$ \cite{banci_side_2001}. These
 alternative options of detection are associated with some advantages and
 drawbacks: offering better resolution, they compromise sensitivity and
 become dependent on the remoteness of the methylene groups from the
 backbone. 
-
-Comparison of the Schemes 1-3 described above is summarized in
-Table~\ref{tab:gtwo} and indicative of the improved accuracy of the third 
-method without systematic deviation from the reference carbon-detected
-approaches. 
 
 \section{Discussion}
 Methylene groups are present in 17 out of 20 proteinogenic amino acids
@@ -986,7 +942,7 @@ techniques described previously. The novelty of Scheme~3 consists in the specifi
 combination of three elements: (1) the intensity adjustment of 1:2:1 carbon triplet is
 applied twice, before and after relaxation delay 
 (the adjustment before relaxation delay was routinely used in all previous schemes
-\cite{yang_study_1998,banci_side_2001,zheng_measurement_2004}; 
+\cite{banci_side_2001,zheng_measurement_2004,yang_study_1998}; 
 (2) the \oneJch-modulation is used for methylenes
 (measuring \gtwoCH{} in methylenes 
 without the second intensity adjustment is useless \cite{yang_probing_2011});
@@ -1003,7 +959,7 @@ suitable one for a protein of a particular category, optimization of
 experimental parameters and uncertainty sources.
 
 According to \cite{carlomagno_errors_2000}, constant time delay 
-$T = N/2\cdot~\oneJcc = N\cdot 14.3$ ms should approximately scale as 
+$T = \allowbreak N/\allowbreak (2\cdot~\oneJcc) \allowbreak = N\cdot 14.3$ ms should approximately scale as 
 $1/R_2$ for the case of  $\gtwoCH$ subjected to the condition: 
 $\gtwoCH\cdot T < 1$. The direct measurement of $R_2$ is unavailable 
 for methylenes, since the \clab{} transverse relaxation decay is 
@@ -1011,22 +967,22 @@ multiexponential as a result of cross-correlation
 effects \cite{yang_probing_2011}, as well as the influence of $R_{ex}$ in the absence of {CPMG}. Nevertheless, a guess for the integer  $N$ allowing the proper scaling of $T$ can be made from the constant-time \clab{} {HSQC} experiment.
 
 \begin{figure}
-    \includegraphics[width=\columnwidth]{Fig4_tc}
+    \includegraphics[width=\columnwidth]{Fig4}
     \caption{
     Contour plot of 
     \gtwoCH{} as a function of the overall correlation time $ \tau_c $ 
-    and the cross-correlation order parameter \StwoCH{}. Relaxation rates 
-    were calculated from equation \eqref{eq:gtwo:tauc} at $\omega_\text{H}/2 \pi = 800\,\text{MHz}$.}
-    \label{fig:g2contours}
+    and the cross-correlation order parameter \StwoCHp{}. Relaxation rates 
+    were calculated from eq. \eqref{eq:gtwo:tauc} at $\omega_\text{H}/2 \pi = 800\,\text{MHz}$.
+    \label{fig:g2contours}Assuming tetrahedral bond angle in \CHtwo{} group completely restricted motion (rigid molecule) corresponds to $\StwoCHp{}=-1/3$; cross-correlation order parameter $\StwoCHp{}=1/9$ matches the case of entirely free rotation.
+    }
 \end{figure}
 
 As stated in \cite{carlomagno_errors_2000}, processing experimental data with different $T$ may require the use of $f(T) = A + \gtwoCH\cdot T$ with $A \ne 0$ for approximation. A possible reason for that is a distortion of a methylene \clab{} triplet signal 
 at the stage of detection. This issue equally applies to both
-carbon-detected experiments discussed in the present work, whereas the
-third, proton-detected experiment (as well as its variants), is the 
+carbon-detected experiments discussed in the present work, whereas proton-detected experiments are the 
 least affected by the need to use $A \ne 0$ since it detects 
 transferred terms proportional to the sum of \qinner{} and 
-\qouter{} components of the triplet. 
+\qouter{} components of the triplet.
 
 It's noteworthy that the dependence of \gtwoCH{} 
 as a function of the overall correlation time $ \tau_c $ of a molecule  demonstrates the growth of the \gtwoCH{} absolute 
@@ -1089,9 +1045,10 @@ are not negligible, in order to obtain the \gtwoNH{} values
 \end{equation}
 has to be additionally measured with the aid of conventional 2D 
 \hlab-\nlab{} constant-time {HSQC} experiment without the 180\degree{} 
-proton pulse responsible for refocusing of \oneJch{} evolution, 
+proton pulse responsible for refocusing of \oneJnh{} evolution, 
 and thus resulting in doublets in \nlab{} direction. In this case 
-(see Table \ref{tab:gtwo}), \gtwoNH{} values can be calculated from equations \eqref{eq:cnst1}, \eqref{eq:cnst2} as
+(see Table 
+\ref{tab:gtwo}), \gtwoNH{} values can be calculated from equations \eqref{eq:cnst1}, \eqref{eq:cnst2} as
 \begin{multline}
     \label{eq:gtwoNH2}
     4\gtwoNH\cdot T = 
@@ -1099,16 +1056,16 @@ and thus resulting in doublets in \nlab{} direction. In this case
     = -\ln \biggl( \frac{4 C_2}{C_1^2 (1+C_2)^2} \biggr)
 \end{multline}
 
-In the first two carbon-detected experiments the accuracy of \gtwoCH{} determination and the fraction of resolvable signals can be substantially increased employing pure shift methods in the direct \clab{} dimension: \oneJcc-decon\-volution processing \cite{shimba_elimination_2003,kazimierczuk_non-uniform_2015} as well as band-selective or spin-state-selective decoupling \cite{zangger_pure_2015}. Nevertheless, the first carbon-detected experiment (Scheme~1) mostly serves as a reference approach, whereas Schemes~2 ans 3 (with its modifications) are recommended for direct applications. It should be noted, that since the analysis of the second and the third \oneJch-modulated 
+In the first two carbon-detected experiments the accuracy of \gtwoCH{} determination and the fraction of resolvable signals can be substantially increased employing pure shift methods in the direct \clab{} dimension: \oneJcc-decon\-volution processing \cite{shimba_elimination_2003,kazimierczuk_non-uniform_2015} as well as band-selective or spin-state-selective decoupling \cite{zangger_pure_2015}. Nevertheless, the first carbon-detected experiment (Scheme~1) mostly serves as a reference approach, whereas \oneJch-modulated schemes are recommended for direct applications. It should be noted, that since the analysis of the second and the third \oneJch-modulated 
 experiments involves the values of $\cos(2\pi J t_2)$  at 
 $2\pi J t_2 = 0$ and $\approx \pi$ an insignificant 
 spread of the \oneJch{} values caused by the different environment of 
 identical amino acid residues would, for all practical purposes, not 
 affect the results of approximation. Hence, 27 different averaged 
 values of \oneJch{} can be used at corresponding \CHtwo{} positions in 
-proteins (see Table \ref{tab:oneJch} with 24 \oneJch{} value staking 
+proteins (see Table \ref{tab:oneJch} with 24 \oneJch{} value stacking 
 from the data for 
-{NTII}), and the value of $\oneJnh{} = 90.4$ Hz can be used at \NHtwo{} 
+{NTII}), and the value of $\oneJnh{} = -90.4$ Hz can be used at \NHtwo{} 
 positions. Supplemental figure \ref{fig:scheme4} include a modification 
 (based on 3D {CC(CO)NH} 
 {TOCSY}) of the third \oneJch-modulated experiment, having the highest 
@@ -1124,7 +1081,7 @@ chemical shift dispersion and transverse relaxation.
 
 \begin{figure*}
     \centering
-    \includegraphics[width=\textwidth]{Fig5_G2_struct}
+    \includegraphics[width=\textwidth]{Fig6}
     \caption{NMR parameters depict NTII flexibility.
     (A) Methylene relaxation parameters \gtwo{} (lower panel) together with
     $^3J_\text{HH}$
@@ -1137,7 +1094,7 @@ chemical shift dispersion and transverse relaxation.
     to reflect totally hindered rotation about N-$\text{C}_\alpha$ or 
     $\text{C}_\alpha$-$\text{C}_\beta$ bonds.
     (B) Ribbon diagram of NTII structure with color coded backbone NH order parameters, the color scheme is the same as on the panel A. 
-    The three \enquote{fingers} of the toxin molecule are indicated by Roman numerals.
+    Three \enquote{fingers} of the toxin molecule are indicated by Roman numerals.
     (C) \gtwo{} data for methylenes superimposed on the NTII NMR ensemble of 
     spatial structures (20 structures from PDB are drawn by grey lines). 
     Methylenes of the 1-st nmr structure are represented by thick painted 
@@ -1156,27 +1113,34 @@ chemical shift dispersion and transverse relaxation.
 
 \gtwoCH{} in combination with other relaxation parameters (e.g. $R_1$ 
 and NOE) can be used both for direct mapping of spectral density functions
-\cite{kaderavek_spectral_2016}  and for various model-free interpretations 
+\cite{kaderavek_spectral_2016}  and for various interpretations 
 giving spatial (order parameters) and temporal (rotational correlation 
-times) parameters of internal motions within a \CHtwo{} group. One may 
-start from the simplest models with isotropic overall tumbling of the 
-protein and internal rotation of the \CHtwo{} group about a single C-C 
-axis (see 
+times) parameters of internal motions within a \CHtwo{} group.
+
+We should emphasize that $R_1$ and NOE of methylene groups are associated with \emph{auto}{-}cor\-re\-la\-tion order parameter \StwoCH{}, while  \gtwoCH{} is characterized by \emph{cross}-correlation order parameter \StwoCHp{}.
+These two parameters are interrelated, e.g. fully restricted motion of a \CHtwo{} group (rigid methylene) results in $\StwoCH=1$ and $\StwoCHp=-1/3$, free unrestricted rotation of a \CHtwo{} group is described by $\StwoCH=0$ and $\StwoCHp=1/9$. 
+Different relationships between these order parameters define various motional models discussed by Daragan, Mayo and coworkers  \cite{idiyatullin_simple_2004,daragan_motional_1997,daragan_using_1995}.
+One may 
+start from simplest models with isotropic overall tumbling of the 
+protein and a single axis internal rotation within a \CHtwo{} group (see 
 \cite{daragan_motional_1997,zheng_measurement_2004,daragan_using_1995}), 
 or continue with more complex multiparametric models
 \cite{paquin_multiple-timescale_2008,ferrage_chapter_2017,ghalebani_nmr_2008,kaderavek_spectral_2016} 
 requiring the measurement of relaxation parameters at different values 
-of magnetic field strength. Besides that, \gtwoCH{} (together with other
+of magnetic field strength. The need to invoke motional models complicates the interpretation and requires additional measurements, on the other hand, unique information about the local anisotropy of rotation within a methylene group can be gained. Beyond that, \gtwoCH{} (together with other
 relaxation parameters) can serve as an experimental reference for
-comparison with corresponding relaxation parameters calculated from MD
+comparison with corresponding parameters calculated from MD
 trajectories (see \cite{aliev_motional_2014}).
 
-Methylene relaxation parameters \gtwoCH{} in most cases admit a simple
-interpretation related them linearly to amplitudes of internal motions
-(see Theory). This interpretation together with other types of NMR data
+Methylene relaxation parameters \gtwoCH{} may admit a simple
+interpretation related them linearly to cross-correlation order parameters
+(see Theory, eq. \eqref{eq:gtwo:tauc}), which strongly depends upon motional restrictions (see discussions about motional restriction maps in the works of Daragan, Mayo and coworkers  \cite{idiyatullin_simple_2004,daragan_motional_1997,daragan_using_1995}). 
+Highly restricted motions results in low negative values of \gtwoCH{} and \StwoCHp{}, but (strictly speaking) the converse does not hold. Non-monotonic dependence between the cross- (or auto-) correlation order parameter and the motional amplitude may lead to an ambiguous interpretation of order parameters, e.g. in the case of two state rotational jumps and some other models \cite{daragan_using_1995,idiyatullin_simple_2004}. Positive values of \gtwoCH{} are generally associated with less restricted motion of a flexible ($\StwoCH<0.5$) methylene group. In the following simplified analysis of \gtwoCH{} parameters we will assume: 1) isotropic overall tumbling of the protein, 2) a single axis rotation within a methylene group, 3) a correlation between the value of \gtwoCH{} and the degree of motional restriction within a methylene group.
+
+Interpretation of \gtwoCH{} together with other types of NMR data
 may provide additional insights into dynamic features of protein packing.
-Specifically, the most pro\-no\-unce correlation was found between
-\gtwoCH{} and $^3J_\text{HH}$ coupling constants 
+Specifically, in our study of NTII the most pro\-no\-unce correlation was found between
+\gtwoCH{} and $^3\!J_\text{HH}$ coupling constants 
 (Fig.~\ref{fig:g2:struct}a), though \gtwoCH{} and backbone NH order
 parameters efficiently complement each other. Backbone order parameters 
 of NTII give the impression that the protein is extremely rigid 
@@ -1184,20 +1148,20 @@ of NTII give the impression that the protein is extremely rigid
 data show surprisingly variable and not always predictable patterns 
 of methylene dynamics (Fig.~\ref{fig:g2:struct}a,c). 
 For example, Fig.~\ref{fig:g2:struct}a highlight the unusually 
-restricted motions of R38 side-chain methylenes ($\beta$,$\gamma$, 
+restricted  motions (as supported by $^3\!J_\text{HH}$ values) of R38 side-chain methylenes ($\beta$,$\gamma$, 
 and $\delta$). This specific feature of NTII packing can be explained 
 by formation of the C-terminal capping motif including the salt bridge between 
-the guanidine group of R38 and the C-terminal carboxyl, and dozen of hydrogen bonds particularly $ 61CO-25H_Z $, $ 61CO_\beta-38H_{H2} $, $ 60CO_{\delta1}-4H_N $, $ 24CO-60H_{\delta21} $, $ 4CO-60H_{\delta22} $ and so on.
+the guanidine group of R38 and the C-terminal carboxyl and a dozen of hydrogen bonds, particularly, $61 \allowbreak \text{CO} \allowbreak \cdots 25\text{H}_\zeta$, $61CO_\beta\cdots38H_{H2}$, $60CO_{\delta1}\cdots4H_N$,
+$24\-CO\cdots60H_{\delta21}$, $4CO\cdots60H_{\delta22}$ and so on.
 It's remarkable that R38 has steric interactions with closely spaced 
-side-chains of Q6, H4, N60, and K25 ($\beta$ and $\gamma$). First three 
-residues are notable for extremely low \gtwoCH{} of $\beta$ and/or 
-$\gamma$ methylenes. K25 has the most restricted motions of $\beta$ and 
-$\gamma$ methy\-lenes among lysines of NTII. R38, Q6, H4, and N60 together 
-with 5 cysteines, 3 prolines (not including C17 and P47), and some 
+side-chains of Q6, H4, N60. These  
+residues have very low \gtwoCH{} values (marked by black in Fig.~\ref{fig:g2:struct}a) of $\beta$ and/or 
+$\gamma$ methylenes. $^3\!J_\text{HH}$ data support highly restricted motions for H4 and N60, but not for Q6. R38, Q6, H4, and N60 together 
+with 5 cysteines (except C17), 3 prolines (not including C17 and P47), and some 
 other residues have at least one methylene with low \gtwoCH{} and 
 define the big cluster of spatially restricted dynamics (see
 Fig.~\ref{fig:g2:struct}, c and d). Another smaller cluster is formed 
-around two neighboring tryptophanes and includes also N50 and G48. 
+around two neighboring tryptophanes and includes also N50 and G48.  $^3\!J_\text{HH}$ data verify spatially restricted dynamics for all side chains of smaller cluster except G48. More sophisticated models (which require additional measurements) may be more appropriate for Q6, G41, and G48.
 The specified clusters correlate, but don't agree exactly with the 
 hydrophobic core of the molecule. Actually, a significant correlation 
 of side-chain order parameters with accessible surface area (ASA) 
@@ -1207,8 +1171,7 @@ with low value of \gtwoCH{}, but substantial ASA. And vice versa,
 noticeable amounts of methylenes have relatively high values of 
 \gtwoCH{}, but close to zero ASA. Anyway it's intriguing that 
 functionally active regions of NTII (receptor- and membrane-binding 
-sites) is absolutely free from methylenes with spatially restricted 
-dynamics.
+sites) is absolutely free from methylenes with spatially restricted dynamics.
 
 \section{Conclusions}
 \label{seq:conclusions}
@@ -1222,8 +1185,8 @@ and the enhancement of measurement accuracy (in the order the experiments are
 listed). The latter experiment requires special attention to a zero-quantum coherence evolution; it 
 also allows measuring \gtwoNH{} of primary amines (Asn and Gln side chains) 
 with the same efficiency despite the low gyromagnetic ratio of \nlab.
-Since it is impossible to measure $R_2$ in \XHtwo{} groups, \gtwoXH{} 
-effectively provides the only opportunity to obtain information about the 
+Since measurements and analysis of $R_2$ in \XHtwo{} groups run into serious difficulties, \gtwo{} 
+effectively provides the only practical opportunity to obtain information about the 
 value of the spectral density function at zero frequency $J(0)$ without any 
 contribution of $R_\text{ex}$. Our 2D experiments have the sensitivity similar 
 to that obtained by constant-time {HSQC}-based methods, but independent 
@@ -1240,20 +1203,18 @@ of \gtwoXH{} described in the present work were compared with the intention
 of guiding the optimisation of experimental parameters for various proteins. 
 We give an overview of the application of \gtwoCH{} for the extraction of 
 dynamic parameters of intramolecular motion within a methylene group. 
-The pulse sequences developed in this study for \labCHtwo{} and \labNHtwo{} 
-groups are available with the relevant acquisition parameters for 
-Bruker Avance spectrometers at 
-\url{http://www.ibch.ru/en/unit/nmr#research}. 
+Pulse sequences developed in this and our earlier side-chain study \cite{lesovoy_nmr_2017} are available for 
+Bruker Avance spectrometers at \url{https://github.com/lesovoydm/NMR-side-chain-relaxation} or \url{http://www.ibch.ru/en/unit/nmr#research}. 
 
 
 \begin{acknowledgements}
 The work was supported by the Russian Science Foundation grant 
 \#18-14-00375: pulse sequence development and data analysis.  
 {NMR} experiments were carried out using the equipment 
-provided by the {IBCH} сore facility ({CKP} {IBCH}, grant 
+provided by the {IBCH} core facility ({CKP} {IBCH}, grant 
 {RFMEFI62117X0018} from Russian Ministry of Education and Science) 
 and partially supported by the 
-Russian Academy of Science program “Molecular and cellular biology” and the Russian Foundation for Basic Research grant \#18-04-01289. 
+Russian Academy of Science program "Molecular and cellular biology" and the Russian Foundation for Basic Research grant \#18-04-01289. 
 The authors thank Dr. A.A.~Shul\-ga for the sample of 
 uniformly \nclab-labeled Neurotoxin~II. 
 \end{acknowledgements}
